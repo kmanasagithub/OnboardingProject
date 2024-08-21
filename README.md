@@ -18,16 +18,22 @@
   * [Steps to Install and Enable Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
   * [minikube start](https://minikube.sigs.k8s.io/docs/start/)
   * [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://youtu.be/X48VuDVv0do?si=-dQit0qXd89Xazcy)
+* Node JS
+  * [A Complete NODE JS Course Step by Step](https://www.youtube.com/playlist?list=PL1BztTYDF-QPdTvgsjf8HOwO4ZVl_LhxS)
+* Linux Commands
+* ## Github Training:
+   *  [Github Command Cheatsheet]([url](https://education.github.com/git-cheat-sheet-education.pdf))
+* TypeScript
+* JavaScript
+* React
+
+
+* ### Security Tools
 * [reInvent: Videos](https://www.youtube.com/playlist?list=PL2yQDdvlhXf_kZMl0XZYqWfysycSXCJx8)
 * CloudFormation
 * CloudBuild
 * Elastic Kubernetes Service (EKS)
 * Elastic Container Service (ECS)
-* Node JS
-  * [A Complete NODE JS Course Step by Step](https://www.youtube.com/playlist?list=PL1BztTYDF-QPdTvgsjf8HOwO4ZVl_LhxS)
-* Linux Commands
-* Angular
-* Reach
 * Route 53
 * ### Security Tools
   * CloudWatch
