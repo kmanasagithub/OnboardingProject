@@ -1,7 +1,11 @@
 
 ## SMART Goal
 Understand the training requirement and provide an Initial SMART (Specific, Measurable, Achievable, Realistic, Timebound) for for each step.
-
+* S - Specific
+* M - Measurable
+* A - Achievable
+* R - Realistic
+* T - Timebound
 
 #Onboarding Steps: 
   * Microsoft 365 Setup
