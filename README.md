@@ -22,7 +22,7 @@
   * [A Complete NODE JS Course Step by Step](https://www.youtube.com/playlist?list=PL1BztTYDF-QPdTvgsjf8HOwO4ZVl_LhxS)
 * Linux Commands
 * ## Github Training:
-   *  [Github Command Cheatsheet]([url](https://education.github.com/git-cheat-sheet-education.pdf))
+   *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf))
 * TypeScript
 * JavaScript
 * React
