@@ -1,3 +1,8 @@
+
+## SMART Goal
+Understand the training requirement and provide an Initial SMART (Specific, Measurable, Achievable, Realistic, Timebound) for for each step.
+
+
 #Onboarding Steps: 
   * Microsoft 365 Setup
   * Laptop Setup
@@ -5,17 +10,19 @@
 ## What expertise do I need to work on this project? 
 
 * Ruby
-  *  1-[Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s)
-  *  2-[Ruby Programming Language - Full Course](https://www.youtube.com/watch?v=t_ispmWmdjY)
+  *  1-[Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s) (Days)
+  *  2-[Ruby Programming Language - Full Course](https://www.youtube.com/watch?v=t_ispmWmdjY) (Days)
 * Linux Commands
 * ## Github Training:
-   *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf))
+   *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)) (0 Days)
    *  ## 
 * ## TypeScript
 * ## JavaScript
 * ## React
 * ## Redux
-* ## [Bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction) 
+* ## [Bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction) (0 Days)
+
+* ## Database (2 Days)
 
 * ## Docker
     * [Docker Hindi Playlist](https://www.youtube.com/playlist?list=PL0zysOflRCekdY4189QaG0YkxJ6yDaP1F)
@@ -44,7 +51,11 @@
   * CloudWatch
   * Gurad Duty
   * SSM - AWS System Manager - Store the credentials for the applications. 
-  * Inspector 
+  * Inspector
+ 
+## Functional Training
+* Personal Email
+* 
 
 # README
 This README would normally document whatever steps are necessary to get the
