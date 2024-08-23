@@ -7,26 +7,31 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 * R - Realistic
 * T - Timebound
 
-#Onboarding Steps: 
+## Onboarding Steps: 
   * Microsoft 365 Setup
   * Laptop Setup
 
 ## What expertise do I need to work on this project? 
 
-* Ruby
-  *  1-[Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s) (Days)
+## Ruby:
+  *  1-[Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s) (3-4 Days)
   *  2-[Ruby Programming Language - Full Course](https://www.youtube.com/watch?v=t_ispmWmdjY) (Days)
-* Linux Commands
+
 * ## Github Training:
-   *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)) (0 Days)
-   *  ## 
+   *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)) (0-1 Days)
+     
+* ## JavaScript:
+   * (https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
+    
+* ## Linux Commands
 * ## TypeScript
-* ## JavaScript
 * ## React
 * ## Redux
-* ## [Bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction) (0 Days)
+* ## [Bootstrap]
+   * (https://react-bootstrap.netlify.app/docs/getting-started/introduction) (0 Days)
 
 * ## Database (2 Days)
+   * (https://youtu.be/ztHopE5Wnpc?si=hdjEWz0PNFOaLxeA)
 
 * ## Docker
     * [Docker Hindi Playlist](https://www.youtube.com/playlist?list=PL0zysOflRCekdY4189QaG0YkxJ6yDaP1F)
@@ -44,14 +49,14 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 * ## Node JS (Optional)
   * [A Complete NODE JS Course Step by Step](https://www.youtube.com/playlist?list=PL1BztTYDF-QPdTvgsjf8HOwO4ZVl_LhxS)
 
-* ### Amazon WebServices & Security Tools
+* ## Amazon WebServices & Security Tools
 * [reInvent: Videos](https://www.youtube.com/playlist?list=PL2yQDdvlhXf_kZMl0XZYqWfysycSXCJx8)
 * CloudFormation
 * CloudBuild
 * Elastic Kubernetes Service (EKS)
 * Elastic Container Service (ECS)
 * Route 53
-* ### Security Tools
+* ## Security Tools
   * CloudWatch
   * Gurad Duty
   * SSM - AWS System Manager - Store the credentials for the applications. 
