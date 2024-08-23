@@ -58,8 +58,8 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
   * Inspector
  
 ## Functional Training
-* Personal Email
-* 
+* To get started, first, you need to create an account on Avalara University using your personal email.
+* Then, start the AvaTax training.
 
 # README
 This README would normally document whatever steps are necessary to get the
