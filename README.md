@@ -50,6 +50,7 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
   * [A Complete NODE JS Course Step by Step](https://www.youtube.com/playlist?list=PL1BztTYDF-QPdTvgsjf8HOwO4ZVl_LhxS)
 
 * ## Amazon WebServices & Security Tools
+* NOTE: Create a free personal account on [Amazon Skill Builder](https://explore.skillbuilder.aws/learn)
 * [reInvent: Videos](https://www.youtube.com/playlist?list=PL2yQDdvlhXf_kZMl0XZYqWfysycSXCJx8)
 * CloudFormation
 * CloudBuild
