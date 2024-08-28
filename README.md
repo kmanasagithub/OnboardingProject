@@ -67,6 +67,10 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 * To get started, first, you need to create an account on Avalara University using your personal email.
 * Then, start the AvaTax training.
 
+## Other Systems: 
+* [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
+* [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
+
 # README
 This README would normally document whatever steps are necessary to get the
 application up and running.
