@@ -11,6 +11,10 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
   * Microsoft 365 Setup
   * Laptop Setup
 
+## Books Repository
+  * https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#ruby
+
+
 ## What expertise do I need to work on this project? 
 
 ## Ruby:
@@ -67,9 +71,7 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 * To get started, first, you need to create an account on Avalara University using your personal email.
 * Then, start the AvaTax training.
 
-## Other Systems: 
-* [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
-* [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
+
 
 # README
 This README would normally document whatever steps are necessary to get the
@@ -85,7 +87,10 @@ Things you may want to cover:
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-
+## Into  the Future
+* [Update the Login System] (https://www.keycloak.org/)
+* Update the Documentation System: 
+* [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
 * Deployment instructions
 
 * ...
