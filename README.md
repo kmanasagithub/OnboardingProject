@@ -96,5 +96,7 @@ Things you may want to cover:
 * Update the Documentation System: 
 * [BackStage - Internal Systems Documentation Platform](https://backstage.io/)
 * Deployment instructions
+* Intelligent Document Processing
+* ML Models
 
 * ...
