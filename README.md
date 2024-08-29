@@ -18,8 +18,8 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 ## What expertise do I need to work on this project? 
 
 ## Ruby:
-  *  1-[Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s) (3-4 Days)
-  *  2-[Ruby Programming Language - Full Course](https://www.youtube.com/watch?v=t_ispmWmdjY) (Days)
+  *  Project-1: [Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg&t=5925s) (3-4 Days)
+  *  Project-2: [scalarHubEnggOnboardingApp - (https://github.com/scalarHubTech/scalarHubEnggOnboardingApp/blob/main/UserStory.md)] (Days)
 
 * ## Github Training:
    *  [Github Command Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)) (0-1 Days)
@@ -27,16 +27,20 @@ Understand the training requirement and provide an Initial SMART (Specific, Meas
 * ## JavaScript:
    * (https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
     
-* ## Linux Commands
-* ## TypeScript
-* ## React
-* ## Redux
+* ## React:
+     * (https://www.youtube.com/watch?v=bMknfKXIFA8&t=623s)
+
 * ## [Bootstrap]
    * (https://react-bootstrap.netlify.app/docs/getting-started/introduction) (0 Days)
 
 * ## Database (2 Days)
    * (https://youtu.be/ztHopE5Wnpc?si=hdjEWz0PNFOaLxeA)
-
+ 
+     
+* ## TypeScript
+* ## Linux Commands
+* ## Redux
+ 
 * ## Docker
     * [Docker Hindi Playlist](https://www.youtube.com/playlist?list=PL0zysOflRCekdY4189QaG0YkxJ6yDaP1F)
     * [🔥Complete Docker Tutorial in one video for Beginners in Hindi](https://www.youtube.com/watch?v=X3Wtjwu0vBI&list=PL0zysOflRCekdY4189QaG0YkxJ6yDaP1F&index=2)
