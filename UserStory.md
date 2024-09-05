@@ -109,7 +109,7 @@ As a user, I'd like the option to remove an image.
 * The user is prompted for confirmation before deletion. (Use Javascript confirm ()n dialog) 
 * Deleted images are removed from the homepage.
 
-## Step 6: Required Tag Association
+## Step 7: Required Tag Association
 
 As a user I want all the images to have atleast on tag:
 
@@ -135,3 +135,143 @@ As a user I want all the images to have atleast on tag:
 * I can not save an image without adding atleast one tag.
 * An error message is associated with the appropriate input field when a tag is not provided.
 * All images have atleast one tag.
+
+
+## Step 8: Modify Tag List
+
+As a user I want to edit the tag list for an image.
+
+## Story Description: 
+
+Image tags are awesome -- our users love them! Tags help us make sense of plethora of images added to our system. But how annoying is it when our users make spelling mistakes in their image tags? Very annoying! How awesome , and useful would it be to allow for tags to be edited after an image is added?
+
+## Discussion Topics:
+
+* Show an image's URL to be editable?
+* How would you define a "valid" tag list?
+
+## What is expected of you? 
+
+* There is a link to edit an image.
+* The image whose tags are to be modified is displayed on the edit page.
+* After saving the edit page with valid tags, my changes are visible through our rest of the application.
+
+
+## Step 9: React Setup
+
+As a developer I want to be able to integrate React into my rails application.
+
+## Story Description:
+
+Your users are loving the image sharer application, and want to give their opinions on how certain features can be improved. Using Typescript, Reach and MobX, we will enable users to submit feedback for the application.
+
+We will practice the act of "Slicing" stories into small, quick to test and deliver parts. For this issue, you will be asked to add footer text to the existing boilerplate code.
+
+## Save these links
+
+Details about the boilerplate code
+
+In
+  app/javascript/react_app
+
+ you will find some boilerplate code for you to start with. Some common directories you may see in React apps are:
+
+/components holds all React components, potentially namespaced by more directories
+/stores holds MobX state stores and deals with api calls, asynchronous actions, etc (see references/documentation related to MobX)
+/utils holds general purpose helper modules that can be shared across different parts of the client application
+/test holds tests for all functional code in the application. It's directory structure usually mimics that of the source.
+
+To integrate React with your Rails application, we have already included the necessary set up and dependencies for rails/webpacker. What you need to do is to decide which view template to include:
+
+...other template code
+
+<div id="feedback-root"></div>
+<%= javascript_pack_tag 'application' %>
+
+
+and you will on your way to developing a feedback form in React! Hint: App.tsx is the primary React component rendered.
+
+A note about testing with enzyme and react-testing-library
+
+For testing we will use react-testing-library. There are many reasons for moving to react-testing-library such as:
+
+Easier to test React hooks and any type of DOM related code
+
+Enzyme is somewhat abandonware. Last published was ~3 years ago
+
+Enzyme encourages testing implementation details about React which does not help with UI testing
+
+Enzyme makes it harder to test React hooks and related code
+
+So, as part of the react code on the rockstar app, you will see one enzyme test for education, but you should avoid writing these types of tests if you can and prefer react-testing-library.
+
+Debugging information
+
+If you're having issues getting any React content to render, try:
+in the terminal:
+
+rm -rf tmp
+rails assets:clobber
+foreman start
+
+in the browser (chrome):
+right click the reload icon and select "Empty Cache and Hard Reload"
+
+## References:
+https://beta.reactjs.org/learn
+https://mobx.js.org/getting-started.html
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+https://airbnb.io/enzyme/
+https://mochajs.org/
+https://nodejs.org/api/assert.html
+https://www.chaijs.com/guide/
+
+## What is expected of you? 
+* There is a footer at the bottom of all the pages that reads a "Copyright: Foo Test Inc. New Hire Onboarding".
+* There  is a unit test that checks that the footer text exists
+
+## Step 10: Add Submit Feedback Button
+
+As a developer I want to be able to get prompt feedback for the application I have developed.
+
+## Story Description:
+
+Now that we ahve some familiarity with the react setup, It's time to add a Submit Feedback button that opens a Model that says "Thank you for submitting your feedback."
+
+## User Story
+
+As a User I want to see have Submit feedback Button option on application  Main page so that I can submit feedback that prompt "Thank you for submitting your feedback."As a User I want to see have Submit feedback Button option on application  Main page so that I can submit feedback that prompt "Thank you for submitting your feedback."
+
+## Note:
+
+if you see:
+  TypeError: __webpack_require__.r is not a function.
+
+try clearing the browser caches and reloading the page. Also look for a rogue bin/webpacker process running in the background. This has also simply fixed itself for some people with time.
+
+## References:
+https://react.dev/learn/tutorial-tic-tac-toe
+https://testing-library.com/docs/react-testing-library/intro/
+
+## What is expected of you? 
+* There is a "Submit Feedback" react-gears button in the footer.
+* Clicking the "Submit Feedback" opens up a react-gears modal with text saying "Thank you for submitting"
+* User should be able to close the modal with an x icon.
+
+## Step 11: Adding Feedback Form
+
+React-hook-form Updates
+As a developer I want to be able to get detailed feedback.
+
+## Story Description:
+
+The Feedback Modal has been a huge success! Although User’s have now been wanting to actually type some feedback. Let’s add a form to the Modal to fulfill their request.
+
+## Discussion Topics:
+
+What is a react-hook-form?
+
+How does react-hook-form state differes from using React useState or MobX?
+
+## References:
+https://react-hook-form.com/
