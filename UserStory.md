@@ -108,3 +108,30 @@ As a user, I'd like the option to remove an image.
 
 * The user is prompted for confirmation before deletion. (Use Javascript confirm ()n dialog) 
 * Deleted images are removed from the homepage.
+
+## Step 6: Required Tag Association
+
+As a user I want all the images to have atleast on tag:
+
+## Story Description: 
+
+* The tag feature has been a hit. Our users love being able to filter images by cats, SR-71s, and ScalarHub tax etc. We have discovered that images without any tags receive significantly less views than those with tags. As a result, we have decided to require all images to have atleast on tag.
+
+## Discussion Topics:
+
+* What do you do about the existing images that don't have any tags?
+* Pretend this is a production system that has been running for years with thousands of uses and billions of images. You can't just drop your production db and 
+  rebuild it. You solution should consider the following points.
+
+* You can not delete the tagless images.
+
+* You should not annoy users by presenting them with validation errors if they try to open or edit a tagless image.
+
+* If your solution modifies your production db, then your solution should be able to un-modify your produciton db if you decide to run an older version of your 
+ code on the production db. (Hint: what Rails mechanism performs versioned db changes?)
+
+## What is expected of you? 
+
+* I can not save an image without adding atleast one tag.
+* An error message is associated with the appropriate input field when a tag is not provided.
+* All images have atleast one tag.
