@@ -1,0 +1,28 @@
+
+<h1 class="text-center">Image Gallery</h1>
+
+<hr/>
+
+
+<div id="images" class="row">
+  <% @images.each do |image| %>
+    <% if image.user == current_user %>
+      <div class="col-lg-3 col-md-2" style="width:20rem">
+        <div class="card h-95">
+          <div id="<%= dom_id image %>">
+            <% if image.image.present? %>
+              <%= link_to image_tag(image.image, alt: "Image", style: "width: 100%; height: 300px;"), image %></br>
+            <% else %>
+              No Image Avilable
+            <% end %>
+          </div>
+          
+        </div>
+        <br/>
+      </div>
+    <% end %>
+    <br/>
+  <%end %>
+</div>
+
+

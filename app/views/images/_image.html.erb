@@ -1,0 +1,18 @@
+<div id="<%= dom_id image %>">
+  <p>
+    <% if image.image.present? %>
+      <strong>Image:</strong>
+       <%= image_tag(image.image, class:"image") %>
+    <%else %>
+      No Image Available
+    <% end%>
+  </p>
+
+  <p>
+    <% if image.tags.present? %>
+      <strong>Tags:</strong>
+      <%= image.tags %>
+     <% end%>
+  </p>
+
+</div>

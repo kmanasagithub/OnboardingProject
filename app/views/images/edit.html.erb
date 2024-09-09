@@ -1,0 +1,21 @@
+
+<h1 class="text-center">Editing image</h1>
+
+
+<div class="d-flex justify-content-center">
+  <% if @image.image.present? %>
+    <%= image_tag(@image.image, alt: "Image", style: "width: 400px;") %><br>
+  <% else %>
+    <p>No image available.</p>
+  <% end %>
+</div>
+
+<%= render "form", image: @image %>
+
+<br>
+
+<div class="d-flex justify-content-center">
+  <%= link_to "Show this image", @image ,class:"btn btn-secondary"%>  &nbsp;&nbsp;
+  <%= link_to "Back to images", images_path ,class:"btn btn-primary"%>
+</div>
+

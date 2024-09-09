@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.2.2"
+ruby "3.3.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.0"
@@ -58,6 +58,13 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'devise', '~> 4.9', '>= 4.9.4'
+
+  gem 'acts-as-taggable-on'
+
+  gem 'cssbundling-rails'
+
+  gem 'webpacker', '~> 5.0'
 
 end
 

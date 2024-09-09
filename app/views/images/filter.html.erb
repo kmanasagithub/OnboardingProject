@@ -1,0 +1,14 @@
+<h1>Filtered Images</h1>
+
+<% if @filtered_images.nil? || @filtered_image.empty? %>
+  <p>No images found for the specified tag.</p>
+<% else %>
+  <ul>
+    <%if image.user == current_user %>
+      <% @filtered_images.each do |image| %>
+        <li><%= image.tags %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
+
