@@ -39,16 +39,17 @@
 <ul>
 
   <% @image.tag_list.each do |tag| %>
-      
+       <h5><%=tag %></h5>
       <div id="images" class="row">
         <% Image.tagged_with(tag).each do |image| %>
+        
           <div class="col-md-4"> 
           
-          <%= link_to image_tag(image.image, class: "img-fluid img-thumbnail zoomable-image", style: "width: 430px; height:300px;"), image_path(image) %></br>
+          <%= link_to image_tag(image.image, class: "img-fluid img-thumbnail zoomable-image mb-4", style: "width: 430px; height:300px;"), image_path(image) %></br>
           </div>
         <% end %></br>
       </div>
-      
+      </br></br>
   <% end %>
 
 </ul>

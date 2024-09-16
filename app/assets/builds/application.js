@@ -971,26 +971,26 @@
             }
             return lazyType;
           }
-          function forwardRef(render2) {
+          function forwardRef(render) {
             {
-              if (render2 != null && render2.$$typeof === REACT_MEMO_TYPE) {
+              if (render != null && render.$$typeof === REACT_MEMO_TYPE) {
                 error("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).");
-              } else if (typeof render2 !== "function") {
-                error("forwardRef requires a render function but was given %s.", render2 === null ? "null" : typeof render2);
+              } else if (typeof render !== "function") {
+                error("forwardRef requires a render function but was given %s.", render === null ? "null" : typeof render);
               } else {
-                if (render2.length !== 0 && render2.length !== 2) {
-                  error("forwardRef render functions accept exactly two parameters: props and ref. %s", render2.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined.");
+                if (render.length !== 0 && render.length !== 2) {
+                  error("forwardRef render functions accept exactly two parameters: props and ref. %s", render.length === 1 ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined.");
                 }
               }
-              if (render2 != null) {
-                if (render2.defaultProps != null || render2.propTypes != null) {
+              if (render != null) {
+                if (render.defaultProps != null || render.propTypes != null) {
                   error("forwardRef render functions do not support propTypes or defaultProps. Did you accidentally pass a React component?");
                 }
               }
             }
             var elementType = {
               $$typeof: REACT_FORWARD_REF_TYPE,
-              render: render2
+              render
             };
             {
               var ownName;
@@ -1002,8 +1002,8 @@
                 },
                 set: function(name) {
                   ownName = name;
-                  if (!render2.name && !render2.displayName) {
-                    render2.displayName = name;
+                  if (!render.name && !render.displayName) {
+                    render.displayName = name;
                   }
                 }
               });
@@ -16265,7 +16265,7 @@
                 }
               }
             }
-            var render3 = Component.render;
+            var render2 = Component.render;
             var ref = workInProgress2.ref;
             var nextChildren;
             var hasId;
@@ -16276,12 +16276,12 @@
             {
               ReactCurrentOwner$1.current = workInProgress2;
               setIsRendering(true);
-              nextChildren = renderWithHooks(current2, workInProgress2, render3, nextProps, ref, renderLanes2);
+              nextChildren = renderWithHooks(current2, workInProgress2, render2, nextProps, ref, renderLanes2);
               hasId = checkDidRenderIdHook();
               if (workInProgress2.mode & StrictLegacyMode) {
                 setIsStrictModeForDevtools(true);
                 try {
-                  nextChildren = renderWithHooks(current2, workInProgress2, render3, nextProps, ref, renderLanes2);
+                  nextChildren = renderWithHooks(current2, workInProgress2, render2, nextProps, ref, renderLanes2);
                   hasId = checkDidRenderIdHook();
                 } finally {
                   setIsStrictModeForDevtools(false);
@@ -17635,9 +17635,9 @@
               }
             }
             var newProps = workInProgress2.pendingProps;
-            var render3 = newProps.children;
+            var render2 = newProps.children;
             {
-              if (typeof render3 !== "function") {
+              if (typeof render2 !== "function") {
                 error("A context consumer was rendered with multiple children, or a child that isn't a function. A context consumer expects a single child that is a function. If you did pass a function, make sure there is no trailing or leading whitespace around it.");
               }
             }
@@ -17650,7 +17650,7 @@
             {
               ReactCurrentOwner$1.current = workInProgress2;
               setIsRendering(true);
-              newChildren = render3(newValue);
+              newChildren = render2(newValue);
               setIsRendering(false);
             }
             {
@@ -23100,7 +23100,7 @@
               unmarkContainerAsRoot(container);
             }
           };
-          function createRoot(container, options2) {
+          function createRoot2(container, options2) {
             if (!isValidContainer(container)) {
               throw new Error("createRoot(...): Target container is not a DOM element.");
             }
@@ -23376,7 +23376,7 @@
             }
             return legacyRenderSubtreeIntoContainer(null, element, container, true, callback);
           }
-          function render2(element, container, callback) {
+          function render(element, container, callback) {
             {
               error("ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot");
             }
@@ -23483,7 +23483,7 @@
                 error('You are importing createRoot from "react-dom" which is not supported. You should instead import it from "react-dom/client".');
               }
             }
-            return createRoot(container, options2);
+            return createRoot2(container, options2);
           }
           function hydrateRoot$1(container, initialChildren, options2) {
             {
@@ -23524,7 +23524,7 @@
           exports.flushSync = flushSync$1;
           exports.hydrate = hydrate;
           exports.hydrateRoot = hydrateRoot$1;
-          exports.render = render2;
+          exports.render = render;
           exports.unmountComponentAtNode = unmountComponentAtNode;
           exports.unstable_batchedUpdates = batchedUpdates$1;
           exports.unstable_renderSubtreeIntoContainer = renderSubtreeIntoContainer;
@@ -23550,9 +23550,40 @@
     }
   });
 
+  // node_modules/react-dom/client.js
+  var require_client = __commonJS({
+    "node_modules/react-dom/client.js"(exports) {
+      "use strict";
+      var m = require_react_dom();
+      if (false) {
+        exports.createRoot = m.createRoot;
+        exports.hydrateRoot = m.hydrateRoot;
+      } else {
+        i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        exports.createRoot = function(c, o) {
+          i.usingClientEntryPoint = true;
+          try {
+            return m.createRoot(c, o);
+          } finally {
+            i.usingClientEntryPoint = false;
+          }
+        };
+        exports.hydrateRoot = function(c, h, o) {
+          i.usingClientEntryPoint = true;
+          try {
+            return m.hydrateRoot(c, h, o);
+          } finally {
+            i.usingClientEntryPoint = false;
+          }
+        };
+      }
+      var i;
+    }
+  });
+
   // app/javascript/react/src/components/Welcome.jsx
   var import_react = __toESM(require_react());
-  var ReactDOM = __toESM(require_react_dom());
+  var import_client = __toESM(require_client());
   var Welcome = () => {
     return /* @__PURE__ */ import_react.default.createElement("div", { className: "container" }, /* @__PURE__ */ import_react.default.createElement("p", null, "\xA9 Foo Test Inc. New Hire Onboarding"), /* @__PURE__ */ import_react.default.createElement(FeedbackForm, null));
   };
@@ -23562,6 +23593,7 @@
     const [thankYou, setThankYou] = (0, import_react.useState)(false);
     const openForm = () => {
       setIsFormVisible(true);
+      console.log("Open");
     };
     const closeForm = () => {
       setIsFormVisible(false);
@@ -23618,7 +23650,9 @@
     );
   }
   document.addEventListener("DOMContentLoaded", () => {
-    ReactDOM.render(/* @__PURE__ */ import_react.default.createElement(Welcome, null), document.getElementById("welcome"));
+    const container = document.getElementById("welcome");
+    const root = (0, import_client.createRoot)(container);
+    root.render(/* @__PURE__ */ import_react.default.createElement(Welcome, null));
   });
 })();
 /*! Bundled license information:

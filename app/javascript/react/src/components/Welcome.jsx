@@ -13,6 +13,16 @@ const Welcome = () => {
   );
 };
 
+<div>
+<div className="container">
+  {/* Your page content here */}
+  <FeedbackForm />
+</div>
+<div className="footer">
+  &copy; Foo Test Inc. New Hire Onboarding
+</div>
+</div>
+
 function FeedbackForm() {
   const [feedback, setFeedback] = useState('');
   const [isFormVisible, setIsFormVisible] = useState(false);
